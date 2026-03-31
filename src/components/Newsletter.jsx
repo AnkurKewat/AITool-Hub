@@ -15,8 +15,7 @@ export default function Newsletter() {
       gsap.fromTo(contentRef.current?.children,
         { opacity: 0, y: 30 },
         {
-          opacity: 1, y: 0, stagger: 0.15, duration: 0.7, ease: 'power3.out',
-          scrollTrigger: { trigger: sectionRef.current, start: 'top 85%' }
+          opacity: 1, y: 0, stagger: 0.02, duration: 0.4, ease: 'power3.out'
         }
       )
     }, sectionRef)

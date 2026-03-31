@@ -17,15 +17,13 @@ export default function SubmitTool() {
       gsap.fromTo(boxRef.current,
         { opacity: 0, scale: 0.95, y: 30 },
         {
-          opacity: 1, scale: 1, y: 0, duration: 0.8, ease: 'power3.out',
-          scrollTrigger: { trigger: sectionRef.current, start: 'top 85%' }
+          opacity: 1, scale: 1, y: 0, duration: 0.4, ease: 'power3.out'
         }
       )
       gsap.fromTo(contentRef.current?.children,
         { opacity: 0, y: 20 },
         {
-          opacity: 1, y: 0, stagger: 0.1, duration: 0.6, ease: 'power2.out', delay: 0.2,
-          scrollTrigger: { trigger: sectionRef.current, start: 'top 85%' }
+          opacity: 1, y: 0, stagger: 0.02, duration: 0.3, ease: 'power2.out', delay: 0.05
         }
       )
     }, sectionRef)

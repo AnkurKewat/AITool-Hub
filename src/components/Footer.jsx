@@ -14,8 +14,7 @@ export default function Footer() {
       gsap.fromTo(columnsRef.current?.children,
         { opacity: 0, y: 40 },
         {
-          opacity: 1, y: 0, stagger: 0.1, duration: 0.8, ease: 'power3.out',
-          scrollTrigger: { trigger: footerRef.current, start: 'top 90%' }
+          opacity: 1, y: 0, stagger: 0.02, duration: 0.4, ease: 'power3.out'
         }
       )
     }, footerRef)

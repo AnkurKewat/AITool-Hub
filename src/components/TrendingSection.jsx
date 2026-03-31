@@ -14,13 +14,11 @@ export default function TrendingSection() {
     const ctx = gsap.context(() => {
       gsap.fromTo(headerRef.current,
         { opacity: 0, y: 28 },
-        { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out',
-          scrollTrigger: { trigger: sectionRef.current, start: 'top 80%' } }
+        { opacity: 1, y: 0, duration: 0.3, ease: 'power3.out' }
       )
       gsap.fromTo(listRef.current?.children,
         { opacity: 0, x: -40 },
-        { opacity: 1, x: 0, stagger: 0.07, duration: 0.5, ease: 'power3.out',
-          scrollTrigger: { trigger: listRef.current, start: 'top 82%' } }
+        { opacity: 1, x: 0, stagger: 0.02, duration: 0.3, ease: 'power3.out' }
       )
     }, sectionRef)
     return () => ctx.revert()
