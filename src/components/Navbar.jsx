@@ -48,7 +48,7 @@ export default function Navbar({ onSearch, search }) {
             </svg>
           </div>
           <span style={{ fontWeight: 800, fontSize: '1.0625rem', color: 'var(--on-bg)' }}>
-            AI Tools Hub
+            AI Tool Hub
           </span>
         </a>
 
